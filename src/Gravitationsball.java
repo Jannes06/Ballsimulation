@@ -15,9 +15,9 @@ public class Gravitationsball extends Ball{
 
     public void gravitation (){
 
-     kugel.verschiebe(0,fallRichtung,0);
+     kugel.verschiebe(0,fallRichtung/(   kugel.gibY()  /100) ,0);
 
-        if (kugel.gibY()< 1 || kugel.gibY() > 400 ){
+        if (kugel.gibY()< 10 || kugel.gibY() > 750 ){
           fallRichtung =  fallRichtung * (-1);
         }
 
